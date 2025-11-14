@@ -1,5 +1,5 @@
 # How to implement drill down effect in WinForms Chart
-Learn how to enable drill-down functionality in a Syncfusion WinForms Chart. This guide explains how to navigate from high-level data to detailed views using interactive chart segments and dynamic data binding.
+Learn how to enable drill-down functionality in a [Syncfusion WinForms Chart](https://www.syncfusion.com/winforms-ui-controls/chart). This guide explains how to navigate from high-level data to detailed views using interactive chart segments and dynamic data binding.
 
 ## Syncfusion WinForms Chart Control
 
@@ -25,7 +25,7 @@ The Syncfusion WinForms Chart control offers a comprehensive suite of chart type
 
 ## Axis Types in WinForms Chart Control
 
-Axes are fundamental to interpreting data in most Cartesian charts. The Syncfusion WinForms Chart control supports various axis types to effectively display different kinds of data:
+Axes are fundamental to interpreting data in most Cartesian charts. The [Syncfusion WinForms Chart control](https://help.syncfusion.com/windowsforms/chart/getting-started) supports various axis types to effectively display different kinds of data:
 
 *   **Numerical Axis (NumericalAxis):**
     *   Used for displaying quantitative data where values are represented along a numerical scale.
@@ -42,7 +42,11 @@ Axes are fundamental to interpreting data in most Cartesian charts. The Syncfusi
 
 ## Implement deill down effect in WinForms Chart
 
-Drill-down functionality in charts allows users to interact with a data point and view more detailed information related to that point. In Syncfusion WinForms Chart, this can be achieved by handling the ChartRegionClick event, identifying the clicked data point, and dynamically updating the chart with a new series that presents detailed data.
+Drill-down functionality in charts allows users to interact with a data point and view more detailed information related to that point. In Syncfusion WinForms Chart, this can be achieved by handling the [ChartRegionClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartRegionClick) event, identifying the clicked data point, and dynamically updating the chart with a new series that presents detailed data.
+
+## Output
+
+![Drill down effect in WinForms Chart](https://github.com/user-attachments/assets/588a9830-0f10-4388-9769-9b4dd9c9e57a)
 
 ## Troubleshooting
 
