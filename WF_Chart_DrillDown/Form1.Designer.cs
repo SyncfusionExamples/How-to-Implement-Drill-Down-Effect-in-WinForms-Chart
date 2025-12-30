@@ -26,6 +26,7 @@ namespace WF_Chart_DrillDown
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -40,7 +41,7 @@ namespace WF_Chart_DrillDown
             chartControl1 = new ChartControl();
             ChartSeries chartSeries1 = new ChartSeries();
             ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
-            this.SuspendLayout();    
+            this.SuspendLayout();
             // 
             // chartControl1
             // 
@@ -117,6 +118,7 @@ namespace WF_Chart_DrillDown
                 {
                     InitializeChart();
                 }
+
                 isDrilledDown = !isDrilledDown;
             }
 
@@ -128,7 +130,7 @@ namespace WF_Chart_DrillDown
         /// <summary>
         /// Initializes the ChartControl's data and sets the Chart type
         /// </summary>
-        protected void InitializeDrillDownChart(int index)
+        private void InitializeDrillDownChart(int index)
         {
             ChartSeries series1 = new ChartSeries("Market Breakdown");
             series1.Name = "Market";
@@ -170,16 +172,17 @@ namespace WF_Chart_DrillDown
             series1.Style.DisplayText = true;
 
             series1.Type = ChartSeriesType.Pie;
-           
+
 
             this.chartControl1.Series.Clear();
             this.chartControl1.Series.Add(series1);
         }
+
         #endregion
 
         #region InitializeChart
 
-        protected void InitializeChart()
+        private void InitializeChart()
         {
             this.chartControl1.Series.Clear();
 
@@ -204,6 +207,7 @@ namespace WF_Chart_DrillDown
             this.chartControl1.Legend.Visible = false;
             this.chartControl1.Series[0].Style.Border.Color = Color.Transparent;
         }
+
         #endregion
 
         #region LabelModel
@@ -232,7 +236,6 @@ namespace WF_Chart_DrillDown
         }
 
         #endregion
-
 
         #endregion
     }
